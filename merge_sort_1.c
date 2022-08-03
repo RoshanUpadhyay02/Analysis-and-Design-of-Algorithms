@@ -50,7 +50,9 @@ int merge(int arr[],int l,int h,int mid)
 
 int merge_sort(int a[],int l,int h)
 {
-    if(l < h)
+    if(l == h)
+        return a[l];
+    else
     {
         int mid = (l+h)/2;
         merge_sort(a,l,mid);
